@@ -3,9 +3,9 @@
 
 body {
   background-image: url("images/backgroundgif.gif");
-  background-size: 100%;
+  background-size:cover;
   color: black;
-  font-family:'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Spectral SC', serif;
   text-align: center;
 }
 
@@ -13,12 +13,19 @@ h1 {
   color: black;
   opacity: 0.8;
   font-size: 15px;
+  -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
+  transition: color 0.5s;
+}
+
+h1:hover {
+  color: darkgray;
 }
 
 p {
   color: black;
   opacity: 0.8;
   font-size: 10px;
+  font-family: 'Rubik', sans-serif;
 }
 
 i {
@@ -31,6 +38,7 @@ i {
   padding: 20px;
   max-width: 200px;
   max-height: 200px;
+  border-radius: 50%;
 }
 
 .card-white {
@@ -43,20 +51,19 @@ i {
 }
 
 .container {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
 }
 
 .list-inline > li {
   display: inline-block;
-  padding: 1px;
+  padding: 3px;
 }
 
 .list-inline {
   list-style: none;
   padding-left: 0px;
 }
-
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -66,28 +73,29 @@ i {
 }
 
 a.button {
-    font-family:'Raleway', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: lightpink;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    position: relative;
-    border: none;
-    transition: .4s ease-in;
-    z-index: 1;
+  font-family: 'Spectral SC', serif;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: lightpink;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  transition: .4s ease-in;
+  z-index: 1;
+  cursor: pointer;
   }
 
-  button::before,
-  button::after{
-    position: absolute;
-    content: "";
-    z-index: -1;
-  }
+button::before,
+button::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
 
-  a.button:hover {
-    background: #ff96ad;
-    box-shadow: 0 0 5px #ff96ad, 0 0 25px
-    #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
-  }
+a.button:hover {
+  background: lightblue;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px
+  #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
